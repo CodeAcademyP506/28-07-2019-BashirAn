@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5e88d62c54.js"></script>    
+    <link rel="stylesheet" href="style.css">
+    <title>MP3 player</title>
+</head>
+
+<body>
+    <div id="myMusicPlayer">
+        <canvas id="canvas"></canvas>
+        <input type="range" min="0" max="0" value="0" class="slider" id="musicTime">
+        <div class="timerMp3">
+            <span id="startTimer">0.00</span>
+            <span id="endTimer">0.00</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-backward" id="prev"></i>
+            <i class="fas fa-play" id="play"></i>
+            <i class="fas fa-pause" id="pause"></i>
+            <i class="fas fa-forward" id="next"></i>
+        </div>
+        <input type="range" min="0" max="100" value="10" id="volume">
+        <audio id="myMusic" src="Champions.mp3"></audio>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
